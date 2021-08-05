@@ -2,11 +2,214 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <title>Пинк</title>
   </head>
   <body class="page">
-
-    <p class="page__text">Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
+    <header class="page-header">
+      <a href="#" class="logo page-header__logo">
+        <img class="logo__desktop visually-hidden" src="http://placehold.it/147x40" width="147px" height="40px" alt="Логотип">
+        <img class="logo__mobile" src="http://placehold.it/75x22" width="75px" height="22px" alt="Логотип">
+      </a>
+      <nav class="navigation page-header__navigation">
+        <button class="navigation__burger" type="button"></button>
+        <ul class="navigation__list site-list">
+          <li><a href="#" class="site-list__item">Главная</a></li>
+          <li><a href="#" class="site-list__item">Фотографии</a></li>
+          <li><a href="#" class="site-list__item">Конкурс</a></li>
+          <li><a href="#" class="site-list__item">Dmitry</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Приложение для телефона</h1>
+      <section class="promo">
+        <div class="promo__photo-wrapper">
+          <img class="promo__img" src="http://placehold.it/512x316" width="512px" height="316px" alt="Наше приложение">
+        </div>
+        <h2 class="title title--center visually-hidden">Взгляни на жизнь иначе!</h2>
+        <div class="promo__offer offer">
+          <button class="offer__button button" type="button">Скачать приложение</button>
+          <ul class="offer__platform">
+            <li class="offer__platform-ios">
+              <img class="offer__ios-img" src="http://placehold.it/47x56" width="47px" height="56px" alt="Ios">
+            </li>
+            <li class="offer__platform-android">
+              <img class="offer__android-img" src="http://placehold.it/43x47" width="43px" height="47px" alt="Android">
+            </li>
+            <li class="offer__platform-windows">
+              <img class="offer__windows-img" src="http://placehold.it/44x41" width="44px" height="41px" alt="Windows">
+            </li>
+          </ul>
+          <p class="offer__descr">Доступно для IPhone, IPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+      </section>
+      <section class="advantages">
+        <h2 class="title title--center">Устали от cерости мегаполиса?</h2>
+        <h2 class="title title--center">Нам есть, что вам предложить!</h2>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <img class="advantages__item-img visually-hidden" src="http://placehold.it/186x389" width="186px" height="302" alt="Серый экран">
+            <h3 class="subtitle title--center">Поднимает настроение</h3>
+            <p class="advantages__descr">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="advantages__item">
+            <img class="advantages__item-img visually-hidden" src="http://placehold.it/186x389" width="186px" height="302" alt="Яркий экран">
+            <h3 class="subtitle title--center">Меняет мир вокруг</h3>
+            <p class="advantages__descr">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="advantages__item">
+            <img class="advantages__item-img visually-hidden" src="http://placehold.it/186x389" width="186px" height="302" alt="Экран с улыбкой">
+            <h3 class="subtitle title--center">Заводит новых друзей</h3>
+            <p class="advantages__descr">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+        <img class="advantages__img" src="http://placehold.it/157x330" width="157px" height="330px" alt="Экран с улыбкой">
+        <div class="hours24 visually-hidden">
+          <img class="hours24__img" src="http://placehold.it/298x345" width="298px" height="345px" alt="Эффект на 24 часа">
+          <div class="hours24__content">
+            <h3 class="subtitle">Эффект на 24 часа!</h3>
+            <p class="hours24__descr">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длился целые сутки!</p>
+            <a href="#" class="hours24__link">Узнать больше об исследовании</a>
+          </div>
+        </div>
+      </section>
+      <section class="reviews">
+        <h2 class="visually-hidden">Отзывы наших клиентов</h2>
+        <div class="reviews__slider slider">
+          <button class="reviews__prev visually-hidden"><</button>
+          <div class="reviews__wrapper slider__list">
+            <div class="reviews__item slider__item">
+              <img class="reviews__img visually-hidden" src="http://placehold.it/79x63" width="79px" height="63px" alt="Кавычки">
+              <div class="reviews__persone persone">
+                <h2 class="subtitle persone__name title--center">Николай Петров</h2>
+                <p class="persone__info visually-hidden">25 лет, водитель трамвая</p>
+              </div>
+              <p class="reviews__descr">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные сервые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+            </div>
+          </div>
+          <button class="reviews__next visually-hidden">></button>
+        </div>
+        <div class="reviews__toggles slider__toggles">
+          <button class="slider__toggle slide--active">1</button>
+          <button class="slider__toggle">2</button>
+          <button class="slider__toggle">3</button>
+        </div>
+      </section>
+      <section class="tariff">
+        <h2 class="visually-hidden">Наши тарифы</h2>
+        <div class="tariff__wrapper slider">
+          <table class="price slider__list">
+            <tr>
+              <td class="price__type price__type--disactive"></td>
+              <td class="price__type slider__item--base">
+                <h3 class="price__subtitle">БАЗА</h3>
+                <p class="price__value">1,99 USD</p>
+              </td>
+              <td class="price__type slider__item--standart price__type--active">
+                <h3 class="price__subtitle">СТАНДАРТ</h3>
+                <p class="price__value">3,99 USD</p>
+              </td>
+              <td class="price__type slider__item--unlim">
+                <h3 class="price__subtitle">АНЛИМ</h3>
+                <p class="price__value">9,99 USD</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="price__include visually-hidden"><p class="price__filter-name">Розовый фильтр</p></td>
+              <td class="price__include slider__item--base">
+                <p class="price__filter-name">Розовый фильтр</p>
+                <img class="price__include-img price__include-img--true" src="http://placehold.it/31x21" width="31px" height="21px" alt="Опция включена">
+              </td>
+              <td class="price__include slider__item--standart">
+                <p class="price__filter-name">Розовый фильтр</p>
+                <img class="price__include-img price__include-img--true" src="http://placehold.it/31x21" width="31px" height="21px" alt="Опция включена">
+              </td>
+              <td class="price__include slider__item--unlim">
+                <p class="price__filter-name">Розовый фильтр</p>
+                <img class="price__include-img price__include-img--true" src="http://placehold.it/31x21" width="31px" height="21px" alt="Опция включена">
+              </td>
+            </tr>
+            <tr>
+              <td class="price_include visually-hidden"><p class="price__smile-name">Смайлики</p></td>
+              <td class="price_include slider__item--base">
+                <p class="price__smile-name">Смайлики</p>
+                <img class="price__include-img price__include-img--false" src="http://placehold.it/31x21" width="31px" height="21px" alt="Опция не включена">
+              </td>
+              <td class="price_include slider__item--standart">
+                <p class="price__smile-name">Смайлики</p>
+                <img class="price__include-img price__include-img--true"  src="http://placehold.it/31x21" width="31px" height="21px" alt="Опция включена">
+              </td>
+              <td class="price_include slider__item--unlim">
+                <p class="price__smile-name">Смайлики</p>
+                <img class="price__include-img price__include-img--true" src="http://placehold.it/31x21" width="31px" height="21px" alt="Опция включена">
+              </td>
+            </tr>
+            <tr>
+              <td class="price__include visually-hidden"><p class="price__comments-name">Комментарии</p></td>
+              <td class="price__include slider__item--base">
+                <p class="price__comments-name">Комментарии</p>
+                <img class="price__include-img price__include-img--false" src="http://placehold.it/31x21" width="31px" height="21px" alt="Опция не включена">
+              </td>
+              <td class="price__include slider__item--standart">
+                <p class="price__comments-name">Комментарии</p>
+                <img class="price__include-img price__include-img--false" src="http://placehold.it/31x21" width="31px" height="21px" alt="Опция не включена">
+              </td>
+              <td class="price__include slider__item--unlim">
+                <p class="price__comments-name">Комментарии</p>
+                <img class="price__include-img price__include-img--true" src="http://placehold.it/31x21" width="31px" height="21px" alt="Опция включена">
+              </td>
+            </tr>
+          </table>
+          <div class="price__toggles slider__toggles">
+            <button class="slider__toggle">1</button>
+            <button class="slider__toggle slide--active">2</button>
+            <button class="slider__toggle">3</button>
+          </div>
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="contacts__wrapper">
+          <h2 class="title title--center">Остались вопросы?<br>Свяжитесь с нами!</h2>
+          <ul class="contacts__list">
+            <li class="contacts__call">
+              <h3 class="subtitle">Звоните:</h3>
+              <a class="contacts__number" href="#">+7 (812) 555-66-66</a>
+            </li>
+            <li class="contacts__adress">
+              <h3 class="subtitle">Звоните:</h3>
+              <a class="contacts__street" href="#">ул. Большая Конюшенная, 19/8</a>
+            </li>
+            <li class="contacts__write">
+              <h3 class="subtitle">Звоните:</h3>
+              <a class="contacts__email" href="#">mail@dmitry.ru</a>
+            </li>
+          </ul>
+          <div class="contacts__map"></div>
+        </div>
+      </section>
+      <footer class="page-footer visually-hidden">
+        <div class="page-footer__wrapper">
+          <a href="#" class="logo">
+            <img class="logo__desktop visually-hidden" src="http://placehold.it/147x40" width="147px" height="40px" alt="Логотип">
+            <img class="logo__mobile" src="http://placehold.it/50x25" width="50px" height="25px" alt="Логотип">
+          </a>
+          <ul class="socials">
+            <li class="social__item">
+              <img class="social__twitter" src="http://placehold.it/18x14" width="18px" height="14px" alt="Twitter">
+            </li>
+            <li class="social__item">
+              <img class="social__facebook" src="http://placehold.it/9x18" width="9px" height="18px" alt="Facebook">
+            </li>
+            <li class="social__item">
+              <img class="social__youtube" src="http://placehold.it/15x13" width="15px" height="13px" alt="Youtube">
+            </li>
+          </ul>
+          <div class="copyright">
+            <p class="copyright__title">Разработано</p>
+            <img class="copyright__logo" src="http://placehold.it/27x34" width="27px" height="34px" alt="Логотип компании">
+          </div>
+        </div>
+      </footer>
+    </main>
   </body>
 </html>
